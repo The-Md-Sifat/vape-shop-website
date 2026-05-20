@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid red;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .slider {
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    border: 2px solid black;
+    top: 50%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
+}
+
+.container .slider .item {
+    position: absolute;
+    border: 2px solid green;
+    inset: 0;
+    transform:
+        rotateY(calc((var(--position)-1)* (360 / var(--quantity)) *1deg ))
+        translateZ(550px);
+
+
+}
+
+.container .slider .item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
