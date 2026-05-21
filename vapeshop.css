@@ -1,71 +1,278 @@
-body{
-    background-image: url(bgimage2.png);
-    
-       background-repeat: no-repeat;
-       background-size:cover;
-       background-position:-10% 65%;
-       z-index: 200;
-        
-    
-}
-
-       
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.container {
-       
-
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    /* background: black; */
-
-
-    perspective: 1500px;
-
+/* animation starts from here */
+.parentcontainer{
+    height: 83vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -100;
+    border: 10px solid rgb(14, 241, 44);
+    
 }
 
-.slider {
-    position: relative;
+.childcontainer{
+    height: 200px;
     width: 200px;
-    height: 260px;
+    /* background-color: red; */
+    /* border: 2px solid red;   */ /* center of the circular path */
+    
+    perspective: 1200px;
     transform-style: preserve-3d;
-    animation: autoRun 18s linear infinite;
 }
-
-@keyframes autoRun {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-.item {
+.item1{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     position: absolute;
-    inset: 0;
-    transform:
-        rotateY(calc((var(--position) - 1) * 36deg))
-        translateZ(320px)
-       
+    border: 2px solid blue;
+    border-radius: 7%;
+}
+.item2{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey2;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item3{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey3;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item4{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey4;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item5{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey5;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item6{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey6;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item7{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey7;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item8{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey8;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
+}
+.item9{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey9;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%
+    
+   
+
+}
+.item10{
+    height: 300px;
+    width:200px;
+    /* background-color:  blue; */
+    
+   animation-name: movey10;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: 2px solid blue;
+    border-radius: 7%;
+   
+
 }
 
-.item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+@keyframes movey{
+    
+
+    from{
+    transform: rotateY(0deg)  translateZ(320px);
+    }
+
+    to{
+transform: rotateY(360deg) translateZ(320px);
+    }
 }
+
+@keyframes movey2{
+
+    from{
+    transform: rotateY(36deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(396deg)  translateZ(320px);
+    }
+}
+@keyframes movey3{
+
+    from{
+    transform: rotateY(72deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(432deg)  translateZ(320px);
+    }
+}
+@keyframes movey4{
+
+    from{
+    transform: rotateY(108deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(468deg)  translateZ(320px);
+    }
+}
+@keyframes movey5{
+
+    from{
+    transform: rotateY(144deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(504deg)  translateZ(320px);
+    }
+}
+@keyframes movey6{
+
+    from{
+    transform: rotateY(180deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(540deg)  translateZ(320px);
+    }
+}
+@keyframes movey7{
+
+    from{
+    transform: rotateY(216deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(576deg)  translateZ(320px);
+    }
+}
+@keyframes movey8{
+
+    from{
+    transform: rotateY(252deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(612deg)  translateZ(320px);
+    }
+}
+@keyframes movey9{
+
+    from{
+    transform: rotateY(288deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(648deg)  translateZ(320px);
+    }
+}
+@keyframes movey10{
+
+    from{
+    transform: rotateY(324deg) translateZ(320px);
+    }
+
+    to{
+transform: rotateY(684deg)  translateZ(320px);
+    }
+}
+/* animation ends here */
